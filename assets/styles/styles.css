@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
-/*  Regular.ttf
- Medium.ttf
- Bold.ttf
- ExtraBold.ttf */
-
 *,*::before,*::after{
     box-sizing: border-box;
     margin: 0;
@@ -17,6 +12,7 @@ body{
     background-size: cover, cover;
     position: relative;
     min-height: 100vh;
+    font-family: "Inconsolata", serif;
 }
 
 .body_bg_bottom{
@@ -38,9 +34,14 @@ body{
 }
 
 .logo{
-    margin: 0 auto;
+    margin: 1rem auto;
     width: 200px;
 }
+
 .logo img{
     width: 100%;
+}
+
+label{
+    font-size: 20px;
 }
