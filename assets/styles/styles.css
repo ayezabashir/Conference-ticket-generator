@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+/*  Regular.ttf
+ Medium.ttf
+ Bold.ttf
+ ExtraBold.ttf */
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("/assets/images/pattern-lines.svg"), url("/assets/images/background-desktop.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover, cover;
+    position: relative;
+    min-height: 100vh;
+}
+
+.body_bg_bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.body_bg_top{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container{
+    margin: 2rem auto;
+    max-width: 700px;
+    color: #fff;
+}
+
+.logo{
+    margin: 0 auto;
+    width: 200px;
+}
+.logo img{
+    width: 100%;
+}
