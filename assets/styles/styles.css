@@ -83,6 +83,13 @@ label{
     margin-bottom: 1rem;
 }
 
+input[type=file]{
+    background: rgba(255, 255, 255, 0.136);
+    border: 1px dashed #d2d1d6;
+    border-radius: 8px;
+    padding: 1rem 0.5rem;
+}
+
 input[type=text]{
     background: rgba(255, 255, 255, 0.136);
     border: 1px solid #d2d1d6;
