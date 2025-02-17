@@ -4,60 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Conference ticket generator</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
   </head>
   <body>
-    <img class="body_bg_bottom" src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="squiggly-line-bottom">
-    <img class="body_bg_top" src="./assets/images/pattern-squiggly-line-top.svg" alt="squiggly-line-top">
+    <img
+      class="body_bg_bottom"
+      src="./assets/images/pattern-squiggly-line-bottom-desktop.svg"
+      alt="squiggly-line-bottom"
+    />
+    <img
+      class="body_bg_top"
+      src="./assets/images/pattern-squiggly-line-top.svg"
+      alt="squiggly-line-top"
+    />
     <div class="container">
       <div class="logo">
         <img src="./assets/images/logo-full.svg" alt="coding conf" />
       </div>
       <!-- Form starts -->
       <form class="form">
-        <h1 class="form__heading">Your Journey to Coding Conf 2025 Starts Here!</h1>
-        <h2 class="form__subheading">Secure your spot at next year's biggest coding conference.</h2>
-        <div>
-          <label for="upload"> Upload Avatar </label>
-          <input type="file" />
-          Drag and drop or click to upload Upload your photo (JPG or PNG, max
-          size: 500KB).
+        <h1 class="form__heading">
+          Your Journey to Coding Conf 2025 Starts Here!
+        </h1>
+        <h2 class="form__subheading">
+          Secure your spot at next year's biggest coding conference.
+        </h2>
+        <div class="form__input">
+          <div class="user_input">
+            <label for="upload"> Upload Avatar </label>
+            <input type="file" />
+            Drag and drop or click to upload Upload your photo (JPG or PNG, max
+            size: 500KB).
+          </div>
+          <div class="user_input">
+            <label for="name"> Full Name </label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="user_input">
+            <label for="email"> Email Address </label>
+            <input type="text" placeholder="example@email.com" />
+          </div>
+          <div class="user_input">
+            <label for="github"> GitHub Username </label>
+            <input type="text" placeholder="@yourusername" />
+          </div>
+          <button class="btn-ticket">Generate My Ticket</button>
         </div>
-        <div>
-          <label for="name"> Full Name </label>
-          <input type="text" name="name" id="name" />
-        </div>
-        <div>
-          <label for="email"> Email Address </label>
-          <input type="text" placeholder="example@email.com" />
-        </div>
-        <div>
-          <label for="github"> GitHub Username </label>
-          <input type="text" placeholder="@yourusername" />
-        </div>
-        <button>Generate My Ticket</button>
       </form>
       <!-- Form ends -->
       <!-- Generated tickets starts -->
-      <h1>
-        Congrats,
-        <span id="user_name"></span>! Your ticket is ready.
-      </h1>
-      <h2>
-        We've emailed your ticket to
-        <span id="user_email"> Email Address </span>
-        and will send updates in the run up to the event.
-      </h2>
-      <div class="ticket">
-        <div class="ticket__header">
-          <img src="./assets/images/logo-mark.svg" alt="" />
-          <div>
-            <h1>Coding Conf</h1>
-            <p>Jan 31, 2025 / Austin, TX</p>
+      <div class="ticket__container">
+        <h1>
+          Congrats,
+          <span id="user_name"></span>! Your ticket is ready.
+        </h1>
+        <h2>
+          We've emailed your ticket to
+          <span id="user_email"> Email Address </span>
+          and will send updates in the run up to the event.
+        </h2>
+        <div class="ticket">
+          <div class="ticket__header">
+            <img src="./assets/images/logo-mark.svg" alt="" />
+            <div>
+              <h1>Coding Conf</h1>
+              <p>Jan 31, 2025 / Austin, TX</p>
+            </div>
           </div>
+          <div class="ticket__user"></div>
         </div>
-        <div class="ticket__user"></div>
       </div>
     </div>
     <!-- Generated tickets ends

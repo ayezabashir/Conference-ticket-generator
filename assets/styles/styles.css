@@ -15,6 +15,12 @@ body{
     font-family: "Inconsolata", serif;
 }
 
+input{
+    background: none;
+    border: none;
+    outline: none;
+}
+
 .body_bg_bottom{
     position: absolute;
     bottom: 0;
@@ -34,7 +40,7 @@ body{
 }
 
 .logo{
-    margin: 1rem auto;
+    margin: 2rem auto;
     width: 200px;
 }
 
@@ -42,6 +48,67 @@ body{
     width: 100%;
 }
 
+.form{
+    position: relative;
+}
+
+.form__heading{
+    font-size: 48px;
+    margin: 2rem auto 1rem auto;
+    text-align: center;
+}
+
+.form__subheading{
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #d2d1d6;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__input{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.user_input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
 label{
     font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+input[type=text]{
+    background: rgba(255, 255, 255, 0.136);
+    border: 1px solid #d2d1d6;
+    border-radius: 8px;
+    padding: 1rem 0.5rem;
+}
+::placeholder{
+    color: #d2d1d6;
+    font-family: "Inconsolata", serif;
+    font-size: 16px;
+
+}
+
+.btn-ticket{
+    width: 100%;
+    background: #f57261;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 1rem 0.5rem;
+    z-index: 11;
+    font-weight: 700;
+    font-size: 16px;
+    color: #0c082b;
+}
+
+.ticket__container{
+    display: none;
 }
