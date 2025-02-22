@@ -1,188 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
 
-*,*::before,*::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-image: url("/assets/images/pattern-lines.svg"), url("/assets/images/background-desktop.png");
-    background-repeat: no-repeat, repeat;
-    background-size: cover, cover;
-    position: relative;
-    min-height: 100vh;
-    font-family: "Inconsolata", serif;
+body {
+  background-image: url("/assets/images/pattern-lines.svg"),
+    url("/assets/images/background-desktop.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover, cover;
+  position: relative;
+  min-height: 100vh;
+  font-family: "Inconsolata", serif;
 }
 
-input{
-    background: none;
-    border: none;
-    outline: none;
+input {
+  background: none;
+  border: none;
+  outline: none;
 }
 
-.body_bg_bottom{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.body_bg_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.body_bg_top{
-    position: absolute;
-    top: 0;
-    right: 0;
+.body_bg_top {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.body_bg_circle{
-    position: absolute;
-    bottom: 30vh;
-    right: 20vw;
+.body_bg_circle {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
 }
 
-.container{
-    margin: 2rem auto 0 auto;
-    max-width: 700px;
-    color: #fff;
+.container {
+  margin: 2rem auto 0 auto;
+  max-width: 700px;
+  color: #fff;
 }
 
-.logo{
-    margin: 2rem auto;
-    width: 200px;
+.logo {
+  margin: 2rem auto;
+  width: 200px;
 }
 
-.logo img{
-    width: 100%;
+.logo img {
+  width: 100%;
 }
 
-.form{
-    position: relative;
+.form {
+  position: relative;
 }
 
-.form__heading{
-    font-size: 48px;
-    margin: 2rem auto 1rem auto;
-    text-align: center;
+.form__heading {
+  font-size: 48px;
+  margin: 2rem auto 1rem auto;
+  text-align: center;
 }
 
-.form__subheading{
-    margin-top: 0;
-    font-size: 20px;
-    font-weight: 500;
-    color: #8784a4;
-    margin-bottom: 2rem;
-    text-align: center;
+.form__subheading {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #8784a4;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.form__input{
-    max-width: 400px;
-    margin: 0 auto;
+.form__input {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.user_input{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.5rem;
+.user_input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
-.user_input input{
-    color: #d2d1d6;
-    font-size: 16px;
-    font-family: "Inconsolata", serif;
+.user_input input {
+  color: #d2d1d6;
+  font-size: 16px;
+  font-family: "Inconsolata", serif;
 }
 
-.user_input input:hover{
-    cursor: pointer;
-    background: #4b486a;
+.user_input input:hover {
+  cursor: pointer;
+  background: #4b486a;
 }
 
-label{
-    font-size: 20px;
-    margin-bottom: 1rem;
-}
-
-.user_input span{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #8784a4;
-    font-size: 13px;
-}
-
-.custom__input__file{
-    background: rgba(255, 255, 255, 0.136);
-    border: 1px dashed #d2d1d6;
-    border-radius: 8px;
-    padding: 1rem 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.custom__input__file:hover{
-    background: #4b486a;
-    cursor: pointer;
-}
-
-.custom__input__file img{
-    background: rgba(255, 255, 255, 0.096);
+.user_input input:focus {
     border: 1px solid #8784a4;
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 10px;
+  outline: 2px solid #8784a4; /* Outer border */
+  outline-offset: 3px; /* Space between borders */
 }
 
-input[type=text]{
-    background: rgba(255, 255, 255, 0.136);
-    border: 1px solid #d2d1d6;
-    border-radius: 8px;
-    padding: 1rem 0.5rem;
-}
-::placeholder{
-    color: #d2d1d6;
-    font-family: "Inconsolata", serif;
-    font-size: 16px;
-
+label {
+  font-size: 20px;
+  margin-bottom: 1rem;
 }
 
-.btn-ticket{
+.user_input span {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8784a4;
+  font-size: 13px;
+}
+
+.custom__input__file {
+  background: rgba(255, 255, 255, 0.136);
+  border: 1px dashed #d2d1d6;
+  border-radius: 8px;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.custom__input__file:hover {
+  background: #4b486a;
+  cursor: pointer;
+}
+
+.custom__input__file img {
+  background: rgba(255, 255, 255, 0.096);
+  border: 1px solid #8784a4;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  background: rgba(255, 255, 255, 0.136);
+  border: 1px solid #d2d1d6;
+  border-radius: 8px;
+  padding: 1rem 0.5rem;
+}
+::placeholder {
+  color: #d2d1d6;
+  font-family: "Inconsolata", serif;
+  font-size: 16px;
+}
+
+.btn-ticket {
+  width: 100%;
+  background: #f57261;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 1rem 0.5rem;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0c082b;
+}
+
+.ticket__container {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("/assets/images/pattern-lines.svg"),
+      url("/assets/images/background-mobile.png");
+  }
+  .body_bg_bottom {
+    max-width: 70vw;
     width: 100%;
-    background: #f57261;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    padding: 1rem 0.5rem;
-    margin-bottom: 80px;
-    font-weight: 700;
-    font-size: 16px;
-    color: #0c082b;
-}
-
-.ticket__container{
-    display: none;
-}
-
-@media screen and (max-width:768px) {
-    body{
-        background-image: url("/assets/images/pattern-lines.svg"), url("/assets/images/background-mobile.png");
-    }
-    .body_bg_bottom{
-        max-width: 70vw;
-        width: 100%;
-    }
-    .body_bg_top{
-        max-width: 30vw;
-        width: 100%;
-    }
-    .body_bg_circle{
-        display: none;
-    }
-    .container{
-        width: 100%;
-        padding: 0 20px;
-        margin: 0 auto;
-    }
-    .form__heading{
-        font-size: 30px;
-    }   
+  }
+  .body_bg_top {
+    max-width: 30vw;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .form__heading {
+    font-size: 30px;
+  }
 }
