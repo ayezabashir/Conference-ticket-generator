@@ -11,6 +11,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <script src="./assets/main.js" defer></script>
   </head>
   <body>
     <img
@@ -38,13 +39,15 @@
         <div class="form__input">
           <div class="user_input">
             <label for="upload"> Upload Avatar </label>
-            <input type="file" />
-            <div class="input__file">
+            <div class="custom__input__file">
+              <input type="file" id="file_input" style="display: none;" />
               <img src="./assets/images/icon-upload.svg" alt="upload your photo">
               <span>Drag and drop or click to upload</span>
             </div>
-             Upload your photo (JPG or PNG, max
-            size: 500KB).
+            <span>
+              <img src="./assets/images/icon-info.svg" alt="">
+              Upload your photo (JPG or PNG, max size: 500KB).
+            </span>
           </div>
           <div class="user_input">
             <label for="name"> Full Name </label>

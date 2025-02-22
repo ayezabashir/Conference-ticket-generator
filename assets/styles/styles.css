@@ -83,11 +83,32 @@ label{
     margin-bottom: 1rem;
 }
 
-input[type=file]{
+.user_input span{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #8784a4;
+    font-size: 14px;
+}
+
+.custom__input__file{
     background: rgba(255, 255, 255, 0.136);
     border: 1px dashed #d2d1d6;
     border-radius: 8px;
     padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom__input__file img{
+    background: rgba(255, 255, 255, 0.096);
+    border: 1px solid #d2d1d6;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 input[type=text]{
