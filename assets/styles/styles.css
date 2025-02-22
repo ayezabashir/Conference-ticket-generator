@@ -36,10 +36,16 @@ input {
   right: 0;
 }
 
+.body_bg_circle_top{
+    position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .body_bg_circle {
   position: absolute;
-  bottom: 100px;
-  right: 100px;
+  bottom: 30vh;
+  right: 20vw;
 }
 
 .container {
@@ -182,6 +188,15 @@ input[type="text"] {
   .body_bg_top {
     max-width: 30vw;
     width: 100%;
+  }
+  .body_bg_circle_top{
+    max-width: 100px;
+    width: 100%;
+  }
+  .body_bg_circle {
+    max-width: 100px;
+    width: 100%;
+    right: 50px;
   }
   .container {
     width: 100%;
