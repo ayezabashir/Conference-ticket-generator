@@ -33,8 +33,14 @@ input{
     right: 0;
 }
 
+.body_bg_circle{
+    position: absolute;
+    bottom: 30vh;
+    right: 20vw;
+}
+
 .container{
-    margin: 2rem auto;
+    margin: 2rem auto 0 auto;
     max-width: 700px;
     color: #fff;
 }
@@ -62,7 +68,7 @@ input{
     margin-top: 0;
     font-size: 20px;
     font-weight: 500;
-    color: #d2d1d6;
+    color: #8784a4;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -78,6 +84,17 @@ input{
     margin-bottom: 1.5rem;
 }
 
+.user_input input{
+    color: #d2d1d6;
+    font-size: 16px;
+    font-family: "Inconsolata", serif;
+}
+
+.user_input input:hover{
+    cursor: pointer;
+    background: #4b486a;
+}
+
 label{
     font-size: 20px;
     margin-bottom: 1rem;
@@ -89,7 +106,7 @@ label{
     align-items: center;
     gap: 10px;
     color: #8784a4;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .custom__input__file{
@@ -102,10 +119,14 @@ label{
     align-items: center;
     justify-content: center;
 }
+.custom__input__file:hover{
+    background: #4b486a;
+    cursor: pointer;
+}
 
 .custom__input__file img{
     background: rgba(255, 255, 255, 0.096);
-    border: 1px solid #d2d1d6;
+    border: 1px solid #8784a4;
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 10px;
@@ -131,7 +152,7 @@ input[type=text]{
     outline: none;
     border-radius: 8px;
     padding: 1rem 0.5rem;
-    z-index: 11;
+    margin-bottom: 80px;
     font-weight: 700;
     font-size: 16px;
     color: #0c082b;
@@ -139,4 +160,29 @@ input[type=text]{
 
 .ticket__container{
     display: none;
+}
+
+@media screen and (max-width:768px) {
+    body{
+        background-image: url("/assets/images/pattern-lines.svg"), url("/assets/images/background-mobile.png");
+    }
+    .body_bg_bottom{
+        max-width: 70vw;
+        width: 100%;
+    }
+    .body_bg_top{
+        max-width: 30vw;
+        width: 100%;
+    }
+    .body_bg_circle{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    .form__heading{
+        font-size: 30px;
+    }   
 }
