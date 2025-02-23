@@ -109,6 +109,19 @@ input {
   outline: 2px solid #8784a4; /* Outer border */
   outline-offset: 3px; /* Space between borders */
 }
+.view__image{
+  display: none;
+}
+
+.view__image .image{
+  width: 50px;
+  height: 50px;
+}
+
+.view__image .btns{
+  display: flex;
+  gap: 10px;
+}
 
 label {
   font-size: 20px;
@@ -124,19 +137,23 @@ label {
   font-size: 13px;
 }
 
-.custom__input__file {
+.custom__input__file  {
   background: rgba(255, 255, 255, 0.136);
   border: 1px dashed #d2d1d6;
   border-radius: 8px;
   padding: 1rem 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
 }
 .custom__input__file:hover {
   background: #4b486a;
   cursor: pointer;
+}
+
+.custom__input__file .upload__image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .custom__input__file img {

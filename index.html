@@ -42,12 +42,22 @@
           <div class="user_input">
             <label for="upload"> Upload Avatar </label>
             <div class="custom__input__file">
-              <input type="file" id="file_input" style="display: none;" />
-              <img src="./assets/images/icon-upload.svg" alt="upload your photo">
-              <span>Drag and drop or click to upload</span>
+              <div class="upload__image">
+                <input type="file" id="file_input" accept="image/png, image/jpg" style="display: none;" />
+                <img src="./assets/images/icon-upload.svg" alt="upload your photo">
+                <span>Drag and drop or click to upload</span>
+              </div>
+              <div class="view__image">
+                <div class="image">
+                </div>
+                <div class="btns">
+                  <button class="remove_img">Remove image</button>
+                  <button class="change_img">Change image</button>
+                </div>
+              </div>
             </div>
             <span>
-              <img src="./assets/images/icon-info.svg" alt="">
+              <img id="user__img" src="./assets/images/icon-info.svg" alt="">
               Upload your photo (JPG or PNG, max size: 500KB).
             </span>
           </div>
