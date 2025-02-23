@@ -101,7 +101,7 @@ input {
 
 .user_input input:hover {
   cursor: pointer;
-  background: #4b486a;
+  background: #393556;
 }
 
 .user_input input:focus {
@@ -111,16 +111,38 @@ input {
 }
 .view__image{
   display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .view__image .image{
+  border: 1px solid #d2d1d6;
+  border-radius: 10px;
   width: 50px;
   height: 50px;
+  background-size: cover;
 }
 
 .view__image .btns{
   display: flex;
   gap: 10px;
+}
+
+.view__image .btns button{
+  padding: 5px 7px;
+  color: #d2d1d6;
+  font-size: 14px;
+  font-family: inherit;
+  background: #4b486a;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  &:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 
 label {
@@ -145,7 +167,7 @@ label {
   
 }
 .custom__input__file:hover {
-  background: #4b486a;
+  background: #393556;
   cursor: pointer;
 }
 
@@ -187,6 +209,10 @@ input[type="text"] {
   font-weight: 700;
   font-size: 16px;
   color: #0c082b;
+  &:hover{
+    background: #E26050;
+    cursor: pointer;
+  }
 }
 
 .ticket__container {
