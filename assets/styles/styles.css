@@ -67,6 +67,10 @@ input {
   position: relative;
 }
 
+.form.d-none{
+  display: none;
+}
+
 .form__heading {
   font-size: 48px;
   margin: 2rem auto 1rem auto;
@@ -186,7 +190,7 @@ label {
   margin-bottom: 10px;
 }
 
-input[type="text"] {
+input[type="text"], input[type="email"] {
   background: rgba(255, 255, 255, 0.136);
   border: 1px solid #d2d1d6;
   border-radius: 8px;
