@@ -37,10 +37,14 @@ change_img.addEventListener("click", () => {
   file_input.click();
 });
 
-generate_ticket.addEventListener("click", () => {
-  const user_name = document.getElementById("u-name");
-  const user_github = document.getElementById("u-github");
-  const user_email = document.getElementById("u-email");
-  form.classList.add("d-none");
-  ticket_container.style.display = "black";
+generate_ticket.addEventListener("click", (e)=>{
+  e.preventDefault();
+  ticketGenerator()
 });
+
+function ticketGenerator(){
+  window.location.href = "assets/ticket.html"
+    const user_name = document.getElementById("u-name");
+    const user_github = document.getElementById("u-github");
+    const user_email = document.getElementById("u-email");
+}
