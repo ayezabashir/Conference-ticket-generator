@@ -24,7 +24,7 @@ file_input.addEventListener("change", () => {
     uploaded_image = reader.result;
     if(file_input.files[0].size > 500000){
       error_msg.innerText = "File too large. Please upload a photo under 500KB";
-      error_msg.style.color ="red";
+      error_msg.style.color ="F57463";
       view__img_container.style.display = "none";
       img_input.style.display = "flex";
     }else{
@@ -49,13 +49,18 @@ change_img.addEventListener("click", () => {
 });
 
 generate_ticket.addEventListener("click", (e)=>{
+  const user_name = document.getElementById("u-name").value;
+  const user_github = document.getElementById("u-github").value;
+  const user_email = document.getElementById("u-email").value;
+  localStorage.setItem("name",user_name);
+  localStorage.setItem("github",user_github);
+  localStorage.setItem("email",user_email);
   e.preventDefault();
   ticketGenerator()
 });
 
 function ticketGenerator(){
   window.location.href = "assets/ticket.html"
-    const user_name = document.getElementById("u-name");
-    const user_github = document.getElementById("u-github");
-    const user_email = document.getElementById("u-email");
+  var u_name = document.getElementById("user_name");
+  u_name.innerText= "hola";
 }
