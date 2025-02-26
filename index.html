@@ -43,7 +43,7 @@
             <label for="upload"> Upload Avatar </label>
             <div class="custom__input__file">
               <div class="upload__image">
-                <input type="file" id="file_input" accept="image/png, image/jpg" style="display: none;" />
+                <input type="file" id="file_input" accept="image/jpg, image/png" style="display: none;" />
                 <img src="./assets/images/icon-upload.svg" alt="upload your photo">
                 <span>Drag and drop or click to upload</span>
               </div>
@@ -56,9 +56,11 @@
                 </div>
               </div>
             </div>
-            <span>
-              <img id="user__img" src="./assets/images/icon-info.svg" alt="">
-              Upload your photo (JPG or PNG, max size: 500KB).
+            <span class="info">
+              <img id="info_icon" src="./assets/images/icon-info.svg" alt="">
+              <span class="error">
+                Upload your photo (JPG or PNG, max size: 500KB).
+              </span>
             </span>
           </div>
           <div class="user_input">
@@ -71,7 +73,7 @@
           </div>
           <div class="user_input">
             <label for="github"> GitHub Username </label>
-            <input type="text" id="u-github" placeholder="@yourusername" />
+            <input type="text" id="u-github" placeholder="@76666ubv yourusername" />
           </div>
           <button class="btn-ticket" type="submit" >Generate My Ticket</button>
         </div>

@@ -36,8 +36,8 @@ input {
   right: 0;
 }
 
-.body_bg_circle_top{
-    position: absolute;
+.body_bg_circle_top {
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -67,7 +67,7 @@ input {
   position: relative;
 }
 
-.form.d-none{
+.form.d-none {
   display: none;
 }
 
@@ -109,11 +109,11 @@ input {
 }
 
 .user_input input:focus {
-    border: 1px solid #8784a4;
+  border: 1px solid #8784a4;
   outline: 2px solid #8784a4; /* Outer border */
   outline-offset: 3px; /* Space between borders */
 }
-.view__image{
+.view__image {
   display: none;
   flex-direction: column;
   align-items: center;
@@ -121,7 +121,7 @@ input {
   gap: 15px;
 }
 
-.view__image .image{
+.view__image .image {
   border: 1px solid #d2d1d6;
   border-radius: 10px;
   width: 50px;
@@ -129,12 +129,12 @@ input {
   background-size: cover;
 }
 
-.view__image .btns{
+.view__image .btns {
   display: flex;
   gap: 10px;
 }
 
-.view__image .btns button{
+.view__image .btns button {
   padding: 5px 7px;
   color: #d2d1d6;
   font-size: 14px;
@@ -143,7 +143,7 @@ input {
   border-radius: 5px;
   border: none;
   outline: none;
-  &:hover{
+  &:hover {
     text-decoration: underline;
     cursor: pointer;
   }
@@ -163,19 +163,18 @@ label {
   font-size: 13px;
 }
 
-.custom__input__file  {
+.custom__input__file {
   background: rgba(255, 255, 255, 0.136);
   border: 1px dashed #d2d1d6;
   border-radius: 8px;
   padding: 1rem 0.5rem;
-  
 }
 .custom__input__file:hover {
   background: #393556;
   cursor: pointer;
 }
 
-.custom__input__file .upload__image{
+.custom__input__file .upload__image {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,7 +189,18 @@ label {
   margin-bottom: 10px;
 }
 
-input[type="text"], input[type="email"] {
+.info {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  gap: 5px;
+}
+.info .error{
+  margin-top: 0;
+}
+
+input[type="text"],
+input[type="email"] {
   background: rgba(255, 255, 255, 0.136);
   border: 1px solid #d2d1d6;
   border-radius: 8px;
@@ -213,12 +223,11 @@ input[type="text"], input[type="email"] {
   font-weight: 700;
   font-size: 16px;
   color: #0c082b;
-  &:hover{
-    background: #E26050;
+  &:hover {
+    background: #e26050;
     cursor: pointer;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   body {
@@ -233,7 +242,7 @@ input[type="text"], input[type="email"] {
     max-width: 30vw;
     width: 100%;
   }
-  .body_bg_circle_top{
+  .body_bg_circle_top {
     max-width: 100px;
     width: 100%;
   }
