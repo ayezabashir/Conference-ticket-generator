@@ -48,19 +48,18 @@ change_img.addEventListener("click", () => {
   file_input.click();
 });
 
-generate_ticket.addEventListener("click", (e)=>{
+form.addEventListener("submit", (e)=>{
   const user_name = document.getElementById("u-name").value;
   const user_github = document.getElementById("u-github").value;
   const user_email = document.getElementById("u-email").value;
   localStorage.setItem("name",user_name);
   localStorage.setItem("github",user_github);
   localStorage.setItem("email",user_email);
-  e.preventDefault();
+  e.preventDefault()
   ticketGenerator()
-});
+})
 
 function ticketGenerator(){
   window.location.href = "assets/ticket.html"
-  var u_name = document.getElementById("user_name");
-  u_name.innerText= "hola";
+  console.log(localStorage.getItem("name"))
 }
