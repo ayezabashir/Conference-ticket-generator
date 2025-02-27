@@ -47,5 +47,20 @@
       </div>
     </div>
 </div>
+<p id="display-name"></p>
+
+<script>
+  // Wait for the page to load
+  document.addEventListener("DOMContentLoaded", () => {
+    const storedName = localStorage.getItem("name");
+
+    if (storedName) {
+      document.getElementById("display-name").innerText = `Name: ${storedName}`;
+    } else {
+      document.getElementById("display-name").innerText = "No name found!";
+    }
+  });
+</script>
+
 </body>
 </html>
