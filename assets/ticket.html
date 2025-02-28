@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generated Ticket</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
     <script defer src="main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <img
       class="body_bg_bottom"
       src="images/pattern-squiggly-line-bottom-desktop.svg"
@@ -18,40 +18,48 @@
       src="images/pattern-squiggly-line-top.svg"
       alt="squiggly-line-top"
     />
-    <img class="body_bg_circle_top" src="images/pattern-circle.svg" alt="pattern circle">
-    <img class="body_bg_circle" src="images/pattern-circle.svg" alt="pattern circle">
+    <img
+      class="body_bg_circle_top"
+      src="images/pattern-circle.svg"
+      alt="pattern circle"
+    />
+    <img
+      class="body_bg_circle"
+      src="images/pattern-circle.svg"
+      alt="pattern circle"
+    />
     <div class="container">
       <div class="logo">
         <img src="images/logo-full.svg" alt="coding conf" />
       </div>
-    <div class="ticket__container">
-        <h1>
+      <div class="ticket__container">
+        <h1 class="container__heading">
           Congrats,
           <span id="user_name">Jonatan Kristof</span>! Your ticket is ready.
         </h1>
-        <h2>
+        <h2 class="container__subheading">
           We've emailed your ticket to
-          <span id="user_email"> Email Address </span>
+          <span id="user_email">jonatan@email.com</span>
           and will send updates in the run up to the event.
         </h2>
         <div class="ticket">
           <div class="ticket__left">
             <div class="ticket__header">
               <img src="images/logo-mark.svg" alt="" />
-              <div>
+              <div class="conf__info">
                 <h1>Coding Conf</h1>
                 <p>Jan 31, 2025 / Austin, TX</p>
               </div>
             </div>
             <div class="ticket__user">
               <div class="user__image">
-                <img src="./images/image-avatar.jpg" alt="">
-                <div class="user__info">
-                  <p>Jonatan Kristof</p>
-                  <div>
-                    <img src="./images/icon-github.svg" alt="">
-                    <span>@jonatankristof0101</span>
-                  </div>
+                <img src="./images/image-avatar.jpg" alt="" />
+              </div>
+              <div class="user__info">
+                <p>Jonatan Kristof</p>
+                <div class="user_github">
+                  <img src="./images/icon-github.svg" alt="" />
+                  <span>@jonatankristof0101</span>
                 </div>
               </div>
             </div>
@@ -62,23 +70,22 @@
         </div>
       </div>
     </div>
-</div>
-<p id="display-name"></p>
 
-<script>
-  const name = document.getElementById("user_name");
-  const email = document.getElementById("user_email");
-  const github = document.getElementById("user_github")
-  document.addEventListener("DOMContentLoaded", () => {
-    const storedName = localStorage.getItem("name");
+    <script>
+      const name = document.getElementById("user_name");
+      const email = document.getElementById("user_email");
+      const github = document.getElementById("user_github");
+      document.addEventListener("DOMContentLoaded", () => {
+        const storedName = localStorage.getItem("name");
 
-    if (storedName) {
-      document.getElementById("display-name").innerText = `Name: ${storedName}`;
-    } else {
-      document.getElementById("display-name").innerText = "No name found!";
-    }
-  });
-</script>
-
-</body>
+        if (storedName) {
+          document.getElementById(
+            "display-name"
+          ).innerText = `Name: ${storedName}`;
+        } else {
+          document.getElementById("display-name").innerText = "No name found!";
+        }
+      });
+    </script>
+  </body>
 </html>

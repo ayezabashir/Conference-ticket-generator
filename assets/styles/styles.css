@@ -28,6 +28,7 @@ input {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: -1;
 }
 
 .body_bg_top {
@@ -77,7 +78,7 @@ input {
   text-align: center;
 }
 
-.form__subheading {
+.form__subheading, .container__subheading {
   margin-top: 0;
   font-size: 20px;
   font-weight: 500;
@@ -110,8 +111,8 @@ input {
 
 .user_input input:focus {
   border: 1px solid #8784a4;
-  outline: 2px solid #8784a4; /* Outer border */
-  outline-offset: 3px; /* Space between borders */
+  outline: 2px solid #8784a4; 
+  outline-offset: 3px; 
 }
 .view__image {
   display: none;
@@ -229,6 +230,94 @@ input[type="email"] {
   }
 }
 
+.ticket__container{
+  padding: 2rem;
+}
+
+.container__heading{
+  font-size: 48px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+.container__subheading{
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.ticket{
+  background: url('../images/pattern-ticket.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 7rem ;
+}
+
+.ticket__left{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+}
+.ticket__header{
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.ticket__header .conf__info h1{
+  margin-bottom: 15px;
+}
+
+.ticket__header .conf__info p{
+  color: #d2d1d6;
+  font-size: 14px;
+}
+
+.ticket__user{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ticket__user .user__image{
+  height: 70px;
+  width: 70px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.ticket__user img{
+  width: 100%;
+  height: 100%;
+}
+
+.ticket__user .user__info p{
+  font-size: 22px;
+}
+
+.ticket__user .user__info .user_github{
+  display: flex;
+  gap: 10px;
+}
+
+.user_github{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.user_github img{
+  width: 20px;
+  height: 20px;
+}
+.user_github span{
+  color: #8784a4;
+}
+
 @media screen and (max-width: 768px) {
   body {
     background-image: url("/assets/images/pattern-lines.svg"),
@@ -256,7 +345,7 @@ input[type="email"] {
     padding: 0 20px;
     margin: 0 auto;
   }
-  .form__heading {
+  .form__heading, .container__heading {
     font-size: 30px;
   }
 }
