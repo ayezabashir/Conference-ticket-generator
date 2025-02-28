@@ -24,7 +24,7 @@ file_input.addEventListener("change", () => {
     uploaded_image = reader.result;
     if(file_input.files[0].size > 500000){
       error_msg.innerText = "File too large. Please upload a photo under 500KB";
-      error_msg.style.color ="F57463";
+      error_msg.style.color ="#F57463";
       view__img_container.style.display = "none";
       img_input.style.display = "flex";
     }else{
@@ -61,5 +61,4 @@ form.addEventListener("submit", (e)=>{
 
 function ticketGenerator(){
   window.location.href = "./assets/ticket.html"
-  console.log(localStorage.getItem("name"))
 }

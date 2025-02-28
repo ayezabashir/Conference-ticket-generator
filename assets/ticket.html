@@ -27,7 +27,7 @@
     <div class="ticket__container">
         <h1>
           Congrats,
-          <span id="user_name"></span>! Your ticket is ready.
+          <span id="user_name">Jonatan Kristof</span>! Your ticket is ready.
         </h1>
         <h2>
           We've emailed your ticket to
@@ -35,14 +35,30 @@
           and will send updates in the run up to the event.
         </h2>
         <div class="ticket">
-          <div class="ticket__header">
-            <img src="images/logo-mark.svg" alt="" />
-            <div>
-              <h1>Coding Conf</h1>
-              <p>Jan 31, 2025 / Austin, TX</p>
+          <div class="ticket__left">
+            <div class="ticket__header">
+              <img src="images/logo-mark.svg" alt="" />
+              <div>
+                <h1>Coding Conf</h1>
+                <p>Jan 31, 2025 / Austin, TX</p>
+              </div>
+            </div>
+            <div class="ticket__user">
+              <div class="user__image">
+                <img src="./images/image-avatar.jpg" alt="">
+                <div class="user__info">
+                  <p>Jonatan Kristof</p>
+                  <div>
+                    <img src="./images/icon-github.svg" alt="">
+                    <span>@jonatankristof0101</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="ticket__user"></div>
+          <div class="ticket__right">
+            <p id="random_number">#01609</p>
+          </div>
         </div>
       </div>
     </div>
@@ -50,7 +66,9 @@
 <p id="display-name"></p>
 
 <script>
-  // Wait for the page to load
+  const name = document.getElementById("user_name");
+  const email = document.getElementById("user_email");
+  const github = document.getElementById("user_github")
   document.addEventListener("DOMContentLoaded", () => {
     const storedName = localStorage.getItem("name");
 
