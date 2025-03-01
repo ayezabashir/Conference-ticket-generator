@@ -53,13 +53,13 @@
             </div>
             <div class="ticket__user">
               <div class="user__image">
-                <img src="./images/image-avatar.jpg" alt="" />
+                <img class="user__pic" src="./images/image-avatar.jpg" alt="" />
               </div>
               <div class="user__info">
                 <p>Jonatan Kristof</p>
                 <div class="user_github">
                   <img src="./images/icon-github.svg" alt="" />
-                  <span>@jonatankristof0101</span>
+                  <span id="user_github">@jonatankristof0101</span>
                 </div>
               </div>
             </div>
@@ -75,6 +75,7 @@
       const name = document.getElementById("user_name");
       const email = document.getElementById("user_email");
       const github = document.getElementById("user_github");
+      const dp = document.querySelector("user__pic")
       document.addEventListener("DOMContentLoaded", () => {
         const storedName = localStorage.getItem("name");
 

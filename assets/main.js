@@ -52,6 +52,7 @@ form.addEventListener("submit", (e)=>{
   const user_name = document.getElementById("u-name").value;
   const user_github = document.getElementById("u-github").value;
   const user_email = document.getElementById("u-email").value;
+  
   localStorage.setItem("name",user_name);
   localStorage.setItem("github",user_github);
   localStorage.setItem("email",user_email);
