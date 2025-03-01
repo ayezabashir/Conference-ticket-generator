@@ -240,26 +240,39 @@ input[type="email"] {
   text-align: center;
 }
 
+.container__heading #user_name{
+  background: -webkit-linear-gradient(left,#f37362, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .container__subheading{
+  font-weight: 400;
   max-width: 400px;
   margin: 0 auto;
+  color: #d2d1d6;
+}
+
+.container__subheading #user_email{
+  color:#f37362 ;
 }
 
 .ticket{
   background: url('../images/pattern-ticket.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  margin-top: 7rem ;
+  padding: 2rem 1rem 2rem 2rem;
+  margin: 7rem auto;
+  width: 80%;
 }
 
 .ticket__left{
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 54px;
 
 }
 .ticket__header{
@@ -297,11 +310,12 @@ input[type="email"] {
 
 .ticket__user .user__info p{
   font-size: 22px;
+  font-weight: 500;
 }
 
 .ticket__user .user__info .user_github{
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .user_github{
@@ -315,7 +329,14 @@ input[type="email"] {
   height: 20px;
 }
 .user_github span{
+  color: #d2d1d6;
+}
+
+.ticket__right{
+  transform: rotate(90deg);
   color: #8784a4;
+  font-size: 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
