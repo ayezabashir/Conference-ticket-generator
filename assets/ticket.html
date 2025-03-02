@@ -56,7 +56,7 @@
                 <img class="user__pic" src="./images/image-avatar.jpg" alt="" />
               </div>
               <div class="user__info">
-                <p>Jonatan Kristof</p>
+                <p class="user_name">Jonatan Kristof</p>
                 <div class="user_github">
                   <img src="./images/icon-github.svg" alt="" />
                   <span id="user_github">@jonatankristof0101</span>
@@ -75,17 +75,16 @@
       const name = document.getElementById("user_name");
       const email = document.getElementById("user_email");
       const github = document.getElementById("user_github");
-      const dp = document.querySelector("user__pic")
+      const dp = document.querySelector(".user__pic");
+      const u_name = document.querySelector(".user_name")
       document.addEventListener("DOMContentLoaded", () => {
         const storedName = localStorage.getItem("name");
-
-        if (storedName) {
-          document.getElementById(
-            "display-name"
-          ).innerText = `Name: ${storedName}`;
-        } else {
-          document.getElementById("display-name").innerText = "No name found!";
-        }
+        const storedEmail = localStorage.getItem("email");
+        const storedGithub = localStorage.getItem("github");
+        name.innerText = storedName;
+        email.innerText = storedEmail;
+        github.innerText = storedGithub;
+        u_name.innerText = storedName;
       });
     </script>
   </body>
