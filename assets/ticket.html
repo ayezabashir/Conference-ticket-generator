@@ -48,7 +48,7 @@
               <img src="images/logo-mark.svg" alt="" />
               <div class="conf__info">
                 <h1>Coding Conf</h1>
-                <p>Jan 31, 2025 / Austin, TX</p>
+                <p class="conf__date">Jan 31</p>
               </div>
             </div>
             <div class="ticket__user">
@@ -77,6 +77,8 @@
       const github = document.getElementById("user_github");
       const dp = document.querySelector(".user__pic");
       const u_name = document.querySelector(".user_name")
+      const curr_date = document.querySelector(".conf__date");
+      const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
       document.addEventListener("DOMContentLoaded", () => {
         const storedName = localStorage.getItem("name");
         const storedEmail = localStorage.getItem("email");
@@ -85,6 +87,8 @@
         email.innerText = storedEmail;
         github.innerText = storedGithub;
         u_name.innerText = storedName;
+        const date = new Date();
+        curr_date.innerText =  `${month[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()} / Austin, TX` ;
       });
     </script>
   </body>

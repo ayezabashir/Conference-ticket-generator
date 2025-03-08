@@ -197,8 +197,17 @@ label {
   align-items: baseline;
   gap: 5px;
 }
+
 .info .error {
   margin-top: 0;
+}
+
+.user_input .email-info{
+  display: none;
+  justify-content: start;
+  align-items: baseline;
+  gap: 5px;
+  color: #F57463;
 }
 
 input[type="text"],
