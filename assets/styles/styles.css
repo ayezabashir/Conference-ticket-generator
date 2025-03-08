@@ -202,12 +202,16 @@ label {
   margin-top: 0;
 }
 
+
 .user_input .email-info{
   display: none;
   justify-content: start;
-  align-items: baseline;
   gap: 5px;
+}
+
+.email-info span {
   color: #F57463;
+  margin-top: 0;
 }
 
 input[type="text"],
@@ -274,7 +278,7 @@ input[type="email"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1rem 2rem 2rem;
+  padding: 1.5rem 1rem 2rem 1.5rem;
   margin: 7rem auto;
   width: 80%;
 }

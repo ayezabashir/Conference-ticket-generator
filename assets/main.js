@@ -12,6 +12,8 @@ const ticket_container = document.querySelector(".ticket__container");
 const form = document.querySelector(".form");
 const error_msg = document.querySelector(".error");
 const info_icon = document.getElementById("info_icon");
+const emailInput = document.getElementById("u-email");
+const invalidMsg = document.querySelector(".email-info")
 var uploaded_image = "";
 
 custom_file_input.addEventListener("click", () => {
@@ -63,3 +65,30 @@ form.addEventListener("submit", (e)=>{
 function ticketGenerator(){
   window.location.href = "./assets/ticket.html"
 }
+
+emailInput.addEventListener("invalid", function (e) {
+  let inputValue = e.target;
+  console.log(inputValue.validity);
+  if (inputValue.validity.typeMismatch || inputValue.validity.valueMissing) {
+    inputValue.setCustomValidity(" ");
+    invalidMsg.style.display = 'flex';
+    emailInput.style.borderColor = '#F57463';
+    emailInput.style.outline = 'none';
+  } else {
+    invalidMsg.style.display = 'none';
+    emailInput.style.outlineStyle = 'solid';
+    emailInput.style.borderColor = '#8784a4';
+    emailInput.style.outlineColor = '#8784a4';
+    emailInput.style.outlineWidth = '2px';
+    emailInput.style.outlineOffset = '3px';
+  }
+});
+
+emailInput.addEventListener("input", function () {
+  invalidMsg.style.display = 'none'
+  emailInput.style.outlineStyle = 'solid';
+  emailInput.style.borderColor = '#8784a4';
+  emailInput.style.outlineColor = '#8784a4';
+  emailInput.style.outlineWidth = '2px';
+  emailInput.style.outlineOffset = '3px';
+});
