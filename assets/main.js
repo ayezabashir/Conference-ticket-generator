@@ -64,7 +64,7 @@ form.addEventListener("submit", (e)=>{
 })
 
 function ticketGenerator(){
-  window.location.href = "./assets/ticket.html"
+  window.location.href = "assets/ticket.html"
 }
 
 emailInput.addEventListener("invalid", function (e) {
