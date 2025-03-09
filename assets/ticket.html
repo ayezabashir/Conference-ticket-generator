@@ -78,11 +78,15 @@
       const dp = document.querySelector(".user__pic");
       const u_name = document.querySelector(".user_name")
       const curr_date = document.querySelector(".conf__date");
+      
       const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+      
       document.addEventListener("DOMContentLoaded", () => {
         const storedName = localStorage.getItem("name");
         const storedEmail = localStorage.getItem("email");
         const storedGithub = localStorage.getItem("github");
+        const storedPicture = localStorage.getItem("u-picture");
+        dp.src = storedPicture;
         name.innerText = storedName;
         email.innerText = storedEmail;
         github.innerText = storedGithub;

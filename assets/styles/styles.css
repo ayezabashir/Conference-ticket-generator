@@ -110,11 +110,13 @@ input {
   background: #393556;
 }
 
-.user_input input:focus {
+.user_input input:focus, 
+.btn-ticket:focus {
   border: 1px solid #8784a4;
   outline: 2px solid #8784a4;
   outline-offset: 3px;
 }
+
 .view__image {
   display: none;
   flex-direction: column;
@@ -314,6 +316,10 @@ input[type="email"] {
   width: 70px;
   border-radius: 15px;
   overflow: hidden;
+}
+
+.ticket__user .user__image .user__pic{
+  object-fit: cover;
 }
 
 .ticket__user img {

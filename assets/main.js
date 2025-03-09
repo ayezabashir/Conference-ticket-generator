@@ -37,6 +37,7 @@ file_input.addEventListener("change", () => {
       var view__image = document.querySelector(".view__image .image");
       view__image.style.backgroundImage = `url("${uploaded_image}")`;
     }
+    localStorage.setItem("u-picture", uploaded_image)
   });
   reader.readAsDataURL(file_input.files[0]);
 });
@@ -68,7 +69,6 @@ function ticketGenerator(){
 
 emailInput.addEventListener("invalid", function (e) {
   let inputValue = e.target;
-  console.log(inputValue.validity);
   if (inputValue.validity.typeMismatch || inputValue.validity.valueMissing) {
     inputValue.setCustomValidity(" ");
     invalidMsg.style.display = 'flex';
