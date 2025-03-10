@@ -50,14 +50,14 @@ input {
 }
 
 .container {
-  margin: 2rem auto 0 auto;
-  max-width: 700px;
+  margin: 3rem auto 0 auto;
+  max-width: 720px;
   color: #fff;
 }
 
 .logo {
   margin: 2rem auto;
-  width: 200px;
+  width: 220px;
 }
 
 .logo img {
@@ -73,9 +73,10 @@ input {
 }
 
 .form__heading {
-  font-size: 48px;
-  margin: 2rem auto 1rem auto;
+  font-size: 50px;
+  margin: 3rem auto 1rem auto;
   text-align: center;
+  font-weight: 700;
 }
 
 .form__subheading,
@@ -90,7 +91,7 @@ input {
 
 .form__input {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 1rem auto 0 auto;
 }
 
 .user_input {
