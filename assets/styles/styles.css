@@ -81,17 +81,21 @@ input {
 
 .form__subheading,
 .container__subheading {
-  margin-top: 10px;
-  font-size: 22px;
+  margin-top: 0;
+  font-size: 24px;
   font-weight: 500;
-  color: #8784a4;
+  color: #d2d1d6;
   margin-bottom: 2rem;
   text-align: center;
 }
 
+.ticket__container .container__subheading{
+  max-width: 580px;
+}
+
 .form__input {
-  max-width: 400px;
-  margin: 2rem auto 0 auto;
+  max-width: 450px;
+  margin: 3rem auto 0 auto;
 }
 
 .user_input {
@@ -281,9 +285,9 @@ input[type="email"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1rem 2rem 1.5rem;
-  margin: 7rem auto;
-  width: 80%;
+  padding: 2rem;
+  margin: 5rem auto;
+  width: 72%;
 }
 
 .ticket__left {
