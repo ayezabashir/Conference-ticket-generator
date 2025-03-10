@@ -51,13 +51,13 @@ input {
 
 .container {
   margin: 3rem auto 0 auto;
-  max-width: 720px;
+  max-width: 750px;
   color: #fff;
 }
 
 .logo {
   margin: 2rem auto;
-  width: 220px;
+  width: 200px;
 }
 
 .logo img {
@@ -73,16 +73,16 @@ input {
 }
 
 .form__heading {
-  font-size: 50px;
-  margin: 3rem auto 1rem auto;
+  font-size: 55px;
+  margin: 4rem auto 1rem auto;
   text-align: center;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .form__subheading,
 .container__subheading {
-  margin-top: 0;
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 22px;
   font-weight: 500;
   color: #8784a4;
   margin-bottom: 2rem;
