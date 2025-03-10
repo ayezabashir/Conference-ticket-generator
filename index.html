@@ -40,7 +40,7 @@
         </h2>
         <div class="form__input">
           <div class="user_input">
-            <label for="upload"> Upload Avatar </label>
+            <label for="file_input"> Upload Avatar </label>
             <div class="custom__input__file">
               <div class="upload__image">
                 <input type="file" id="file_input" accept="image/jpg, image/png" style="display: none;" />
@@ -57,28 +57,28 @@
               </div>
             </div>
             <span class="info">
-              <img id="info_icon" src="./assets/images/icon-info.svg" alt="user image">
+              <img class="info_icon" src="./assets/images/icon-info.svg" alt="user image">
               <span class="error">
                 Upload your photo (JPG or PNG, max size: 500KB).
               </span>
             </span>
           </div>
           <div class="user_input">
-            <label for="name"> Full Name </label>
+            <label for="u-name"> Full Name </label>
             <input type="text" id="u-name" />
           </div>
           <div class="user_input">
-            <label for="email"> Email Address </label>
+            <label for="u-email"> Email Address </label>
             <input type="email" id="u-email" required placeholder="example@email.com" />
             <span class="email-info">
-              <img id="info_icon" src="./assets/images/icon-info.svg" alt="info icon">
+              <img class="info_icon" src="./assets/images/icon-info.svg" alt="info icon">
               <span class="error error_mail">
                 Please enter a valid email address
               </span>
             </span>
           </div>
           <div class="user_input">
-            <label for="github"> GitHub Username </label>
+            <label for="u-github"> GitHub Username </label>
             <input type="text" id="u-github" placeholder="@yourusername" />
           </div>
           <button class="btn-ticket" type="submit" >Generate My Ticket</button>
