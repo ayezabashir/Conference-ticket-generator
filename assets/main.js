@@ -20,27 +20,50 @@ custom_file_input.addEventListener("click", () => {
   file_input.click();
 });
 
+ 
 file_input.addEventListener("change", () => {
+  const file = file_input.files[0];
+  if (!file) return;
+
+  const validTypes = ["image/jpeg", "image/jpg", "image/png"];
+  const fileType = file.type.toLowerCase(); // Ensures uppercase extensions are normalized
+
+  // Check type
+  if (!validTypes.includes(fileType)) {
+    error_msg.innerText = "Invalid file type. Please upload JPG or PNG.";
+    error_msg.style.color = "#F57463";
+    view__img_container.style.display = "none";
+    img_input.style.display = "flex";
+    file_input.value = "";
+    return;
+  }
+
+  // Check size
+  if (file.size > 500000) {
+    error_msg.innerText = "File too large. Please upload a photo under 500KB";
+    error_msg.style.color = "#F57463";
+    view__img_container.style.display = "none";
+    img_input.style.display = "flex";
+    file_input.value = "";
+    return;
+  }
+
+  // If passed validation → proceed to preview
   const reader = new FileReader();
   reader.addEventListener("load", () => {
     uploaded_image = reader.result;
-    if(file_input.files[0].size > 500000){
-      error_msg.innerText = "File too large. Please upload a photo under 500KB";
-      error_msg.style.color ="#F57463";
-      view__img_container.style.display = "none";
-      img_input.style.display = "flex";
-    }else{
-      error_msg.innerText = "Upload your photo (JPG or PNG, max size: 500KB).";
-      error_msg.style.color ="#8784a4";
-      view__img_container.style.display = "flex";
-      img_input.style.display = "none";
-      var view__image = document.querySelector(".view__image .image");
-      view__image.style.backgroundImage = `url("${uploaded_image}")`;
-    }
-    localStorage.setItem("u-picture", uploaded_image)
+    error_msg.innerText = "Upload your photo (JPG or PNG, max size: 500KB).";
+    error_msg.style.color = "#8784a4";
+    view__img_container.style.display = "flex";
+    img_input.style.display = "none";
+
+    const view__image = document.querySelector(".view__image .image");
+    view__image.style.backgroundImage = `url("${uploaded_image}")`;
+    localStorage.setItem("u-picture", uploaded_image);
   });
-  reader.readAsDataURL(file_input.files[0]);
+  reader.readAsDataURL(file);
 });
+
 
 remove_img.addEventListener("click", () => {
   img_input.style.display = "flex";
